@@ -8,6 +8,7 @@
     "db:studio": "bunx drizzle-kit studio"
   },
   "dependencies": {
+    "@better-auth/expo": "^1.5.5",
     "better-auth": "^1.5.5",
     "dotenv": "^17.3.1",
     "drizzle-orm": "^0.45.1",

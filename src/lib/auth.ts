@@ -1,10 +1,10 @@
-import { db } from "@/db"; // your drizzle instance
 import { expo } from "@better-auth/expo";
 import { betterAuth } from "better-auth";
-
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
+import { db } from "@/db"; // your drizzle instance
+import { dash } from "@better-auth/infra";
 export const auth = betterAuth({
-  plugins: [expo()],
+  plugins: [expo(), dash()],
   emailAndPassword: {
     enabled: true, // Enable authentication using email and password.
   },
